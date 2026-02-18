@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Anthony's Unblocked Games</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #000;
+      height: 100%;
+      overflow: hidden;
+      font-family: Arial, sans-serif;
+      color: #fff;
+    }
+    .center {
+      position: fixed;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      background: radial-gradient(circle at top, #333, #000);
+    }
+    h1 {
+      margin-bottom: 10px;
+      font-size: 2rem;
+      text-align: center;
+    }
+    p {
+      margin-top: 0;
+      margin-bottom: 20px;
+      opacity: 0.8;
+      text-align: center;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      background: #00b894;
+      color: #000;
+      font-weight: bold;
+    }
+    button:hover {
+      background: #00e0b0;
+    }
+    iframe {
+      width: 100vw;
+      height: 100vh;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="center" id="screen">
+    <h1>Anthony's Unblocked Games</h1>
+    <p>Click below to load the latest “game”.</p>
+    <button onclick="startRickRoll()">Play</button>
+  </div>
+
+  <script>
+    function startRickRoll() {
+      const screen = document.getElementById('screen');
+      screen.innerHTML = `
+        <iframe
+          src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&controls=0&fs=1&modestbranding=1"
+          allow="autoplay; encrypted-media"
+          allowfullscreen
+        ></iframe>
+      `;
+    }
+  </script>
+</body>
+</html>
